@@ -102,7 +102,7 @@ function onMouseMove(e) {
 
   gRaycaster.setFromCamera(mouseVector, gCamera);
   const intersects = gRaycaster.intersectObjects(gWalls.children);
-  console.log(intersects);
+  // console.log(intersects);
   if (intersects.length > 0) {
     const firstIntersection = intersects[0];
     const mesh = new THREE.Mesh(gBoxGeometry, gBoxMaterial);
