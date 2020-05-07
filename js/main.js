@@ -121,3 +121,7 @@ setup();
 animate();
 window.addEventListener("resize", onResize);
 window.addEventListener("mousedown", onMouseDown);
+
+document.querySelector("#hideButton").addEventListener("click", () => {
+  document.querySelector(".popup").style.display = "none";
+});

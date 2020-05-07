@@ -1,4 +1,45 @@
 body {
   margin: 0;
   overflow: hidden;
+  font: 1.5rem sans-serif;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.popup__inner {
+  padding: 50px;
+  background: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  font-size: 4rem/1rem;
+  width: 40rem;
+}
+
+.popup h1 {
+  margin: 0;
+}
+
+.popup button {
+  color: white;
+  background: black;
+  padding: 10px 20px;
+  font: 2rem sans-serif;
+  transition: 0.3s;
+  border: 3px solid black;
+}
+
+.popup button:hover {
+  background: white;
+  color: black;
 }
